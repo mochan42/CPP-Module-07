@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: moninechan <moninechan@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/02 08:49:11 by moninechan        #+#    #+#             */
-/*   Updated: 2023/04/02 08:57:36 by moninechan       ###   ########.fr       */
+/*   Updated: 2023/04/02 17:12:17 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 int main(int, char**)
 {
-    std::cout << "Hello\n";    
-    return 0;
+	std::cout << "Hello\n";
+	return 0;
 }
