@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/02 08:54:23 by moninechan        #+#    #+#             */
-/*   Updated: 2023/04/02 17:07:37 by mochan           ###   ########.fr       */
+/*   Updated: 2023/04/02 17:13:50 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,3 @@ MathOperators::~MathOperators()
 {
 	std::cout << CY << "Destructor called from MathOperators" << D << "\n";
 }
-
-

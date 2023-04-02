@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   MathOperators.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: moninechan <moninechan@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/02 08:55:03 by moninechan        #+#    #+#             */
-/*   Updated: 2023/04/02 08:56:21 by moninechan       ###   ########.fr       */
+/*   Updated: 2023/04/02 17:41:39 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,42 @@
 # define CY "\033[0;36m"
 # define WH "\033[0;37m"
 # define D "\033[0m"
+
+template < typename T >
+void swap(T& x, T& y)
+{
+	T tmp = y;
+	y = x;
+	x = tmp;
+}
+
+
+template < typename T >
+T min(T const & x, T const & y)
+{
+	if (x == y)
+		return y;
+	else
+	{
+		if (x < y)
+			return x;
+		else
+			return y;
+	}
+}
+
+template < typename T >
+T max(T const & x, T const & y)
+{
+		if (x == y)
+			return y;
+		else
+		{
+			if (x > y)
+				return x;
+			else
+				return y;
+		}
+}
 
 #endif
