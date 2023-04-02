@@ -6,24 +6,27 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/02 08:49:11 by moninechan        #+#    #+#             */
-/*   Updated: 2023/04/02 17:44:54 by mochan           ###   ########.fr       */
+/*   Updated: 2023/04/02 17:50:20 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "MathOperators.h"
+#include "MathOperators.hpp"
 
 int main(int, char**)
 {
-	int	a = 21;
-	int	b = 42;
+	int	a = 3;
+	int	b = 2;
 
-	std::cout << "a = " << a << "\n";
-	std::cout << "b = " << b << "\n";
-	std::cout << "max(a,b) = " << max<int>(a, b) << "\n";
-	std::cout << "min(a,b) = " <<min<int>(a, b) << "\n";
-	swap<int>(a, b);
-	std::cout << "swapping a and b...\n";
-	std::cout << "a = " << a << "\n";
-	std::cout << "b = " << b << "\n";
+	::swap( a, b );
+	std::cout << "a = " << a << ", b = " << b << std::endl;
+	std::cout << "min( a, b ) = " << ::min( a, b ) << std::endl;
+	std::cout << "max( a, b ) = " << ::max( a, b ) << std::endl;
+	std::string c = "chaine1";
+	std::string d = "chaine2";
+	::swap(c, d);
+	std::cout << "c = " << c << ", d = " << d << std::endl;
+	std::cout << "min( c, d ) = " << ::min( c, d ) << std::endl;
+	std::cout << "max( c, d ) = " << ::max( c, d ) << std::endl;
+
 	return 0;
 }
