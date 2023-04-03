@@ -1,19 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Array.h                                            :+:      :+:    :+:   */
+/*   Array.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moninechan <moninechan@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/02 19:42:37 by mochan            #+#    #+#             */
-/*   Updated: 2023/04/02 22:54:03 by moninechan       ###   ########.fr       */
+/*   Created: 2023/04/02 23:02:06 by moninechan        #+#    #+#             */
+/*   Updated: 2023/04/03 00:25:34 by moninechan       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ARRAY_H
-#define ARRAY_H
+#include "Array.h"
 
-#include "Array.hpp"
-#include "Array.tpp"
-
-#endif

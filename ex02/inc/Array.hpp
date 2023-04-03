@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
+/*   By: moninechan <moninechan@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/02 19:42:57 by mochan            #+#    #+#             */
-/*   Updated: 2023/04/02 19:43:14 by mochan           ###   ########.fr       */
+/*   Updated: 2023/04/02 23:43:41 by moninechan       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ARRAY_HPP
 #define ARRAY_HPP
 #include <iostream>
+
+#include "Array.tpp"
 
 #endif
