@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/02 19:43:31 by mochan            #+#    #+#             */
-/*   Updated: 2023/04/03 12:46:11 by mochan           ###   ########.fr       */
+/*   Updated: 2023/04/03 13:40:43 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,8 @@ Array<T>::Array(const Array& src) :
 	_size(src._size), _array(new T[src._size])
 {
 	std::cout << BLU << "Copy constructor called from Array" << D << "\n";
-	for (unsigned int i = 0; i < this->size; i++)
-		this->_array[i] = src[i];
+	for (unsigned int i = 0; i < this->_size; i++)
+		this->_array[i] = src._array[i];
 }
 
 
@@ -50,19 +50,18 @@ Array<T>&  Array<T>::operator=(const Array& src)
 	if (_array != NULL)
 		delete [] _array;
 	this->_array = new T[this->_size];
-	for (unsigned int i = 0; i < this->size; i++)
-		this->_array[i] = src[i];
+	for (unsigned int i = 0; i < this->_size; i++)
+		this->_array[i] = src._array[i];
 	return (*this);
 }
 
 template <typename T>
 T &	Array<T>::operator[](unsigned int index)
 {
-	if (index < 0 || index > this->_size)
+	if (index < 0 || index > (this->_size - 1))
 		throw OutOfRangeException();
 	return (this->_array[index]);
 }
-
 
 //======== DESTRUCTOR ==========================================================================
 template <typename T>
@@ -102,9 +101,14 @@ void	Array<T>::printArrayElements(void)
 	else
 	{
 		for (unsigned int i = 0; i < this->size(); i++)
-			std::cout << _array[i] << "\n";
+		{
+			if (i != this->size() - 1)
+				std::cout << _array[i] << " / ";
+			else
+				std::cout << _array[i] << "\n";
+		}
+		
 	}
 }
-
 
 #endif
