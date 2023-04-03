@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/02 19:42:57 by mochan            #+#    #+#             */
-/*   Updated: 2023/04/03 12:17:50 by mochan           ###   ########.fr       */
+/*   Updated: 2023/04/03 14:23:54 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ class Array
 
 		// GETTER - SETTER
 		unsigned int	size(void);
-		void			setArray(void);
 
 		// MEMBER FUNCTIONS
 		void			printArrayElements(void);

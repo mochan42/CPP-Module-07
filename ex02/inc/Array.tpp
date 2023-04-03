@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/02 19:43:31 by mochan            #+#    #+#             */
-/*   Updated: 2023/04/03 13:40:43 by mochan           ###   ########.fr       */
+/*   Updated: 2023/04/03 14:24:03 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,18 +77,6 @@ template <typename T>
 unsigned int	Array<T>::size(void)
 {
 	return (this->_size);
-}
-
-template <typename T>
-void			Array<T>::setArray(void)
-{
-	if (_size == 0)
-		std::cout << "Empty Array" << "\n";
-	else
-	{
-		for (unsigned int i = 0; i < this->size(); i++)
-			std::cout << _array[i] << "\n";
-	}
 }
 
 
